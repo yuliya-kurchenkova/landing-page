@@ -1,0 +1,22 @@
+@import "../../assets/scss/variables";
+
+.navTemplate {
+
+      &__list {
+      display: flex;
+      list-style-type: none;
+      padding: 14px 16px;
+       }
+
+       &__item {
+         color: $color-header-link;
+         margin: 0 10px;
+       }
+
+        &__link {
+           color: $color-header-link;
+           text-align: center;
+           text-decoration: none;
+           font-size: $font-size-link;
+         }
+     }

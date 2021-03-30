@@ -1,0 +1,28 @@
+@import "../../assets/scss/variables";
+
+.priceTemplate {
+ text-align: center;
+
+  &__title {
+    font-size: $font-size-title;
+    color: $color-title;
+    font-weight: 500;
+  }
+  &__text {
+    margin: 20px 400px 50px;
+    color: $color-text;
+    font-size: $font-size-base;
+  }
+  &__price {
+    color: $color-price;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  &__desc-price {
+    font-size: 20px;
+  }
+  &__desc {
+    font-size: $font-size-base;
+    margin: 50px 0 10px;
+  }
+}

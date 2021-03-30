@@ -1,0 +1,9 @@
+@import '../../assets/scss/variables' ;
+
+.app-button {
+  width: 160px;
+  height: 26px;
+  font-size: $font-size-button;
+  background: $background-button;
+  color: $color-white;
+}
