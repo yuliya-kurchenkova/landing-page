@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NavTemplate from "../navTemplate/NavTemplate";
-import Button from "../Button/Button";
+import Button from "../button/Button";
 import classes from './Header.module.scss'
 import logo from '../logo.png'
 
@@ -12,10 +12,10 @@ export default class Header extends Component {
                 <img
                     src={logo}
                     alt='Logo'
-                    height='30'
                 />
                 <Button
                     buttonText={'Buy Now'}
+                    className={'app-button app-button_primary'}
                 />
             </div>
         )

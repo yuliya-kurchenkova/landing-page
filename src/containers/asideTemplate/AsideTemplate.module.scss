@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.asideTemplate {
+  display: flex;
+  justify-content: center;
+
+  &__box {
+    width: 540px;
+    padding-top: 160px;
+  }
+  &__title {
+    padding-bottom: 16px;
+  }
+  &__img {
+    padding: 108px 0 108px;
+    width: 540px;
+  }
+}
+
+.asideTemplate_inner {
+  display: flex;
+  padding-top: 80px;
+
+  &__box {
+    width: 255px;
+  }
+}

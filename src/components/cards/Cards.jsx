@@ -1,28 +1,46 @@
-import React, {Component} from "react";
-import email from '../../assets/images/email.png'
-import holder from "../../constants/Cards1";
-import navList from "../../constants/Navigation";
-import classes from "../navTemplate/NavTemplate.module.scss";
+import React from "react";
+import classes from './Cards.module.scss'
 
-class Cards extends Component {
-    render() {
-        return (
-            <div>
-                {
-                    holder.map((link, index) => {
-                        return (
-                            <h2
-                                key={index}
-                            >
-                                {link.title}
-                            </h2>
-                        )
-                    })
-                }
 
+function Cards({el}) {
+    return (
+        <div className={classes.cards}>
+            <img
+                src={el.src}
+                alt=""
+                className={classes['cards__img']}
+            />
+            <div className={classes['cards__box']}>
+                <h2 className='app-title'>{el.title}</h2>
+                <p className='app-text'>{el.text}</p>
+                {/*<button className={'app-button app-button_primary'}>{el.button}</button>*/}
             </div>
-        )
-    }
+        </div>
+    )
 }
 export default Cards
+
+
+
+
+
+
+// class Cards extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 {/*/!*{*!/*/}
+//                 {/*    // holder.map((link, index) => {*/}
+//                         return (
+//                             <h2>
+//
+//                             </h2>
+//                         )
+//                     })
+//                 }
+//             </div>
+//         )
+//     }
+// }
+// export default Cards
 

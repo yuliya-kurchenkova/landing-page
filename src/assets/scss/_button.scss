@@ -1,9 +1,29 @@
 @import '../../assets/scss/variables' ;
 
+
 .app-button {
-  width: 160px;
-  height: 26px;
-  font-size: $font-size-button;
-  background: $background-button;
+  height: 36px;
+  width: 189px;
+  padding: 0 20px;
+  background: $color-white;
+  border-radius: $borderRadius;
   color: $color-white;
+  font: $font-size-base $font-global;
+  cursor: pointer;
+  transition: opacity .15s ease-in;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &_primary {
+    background: $primary;
+    color: $color-white;
+  }
+
+  &_success {
+    background: $success;
+    color: $primary;
+    border: $borderRadius solid $primary;
+  }
 }

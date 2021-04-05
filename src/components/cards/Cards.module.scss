@@ -1,0 +1,18 @@
+@import "../../assets/scss/variables";
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__img {
+    padding: 123px 0 163px;
+  }
+
+  &__box {
+    display: block;
+    width: 445px;
+    padding-top: 172px;
+
+  }
+}

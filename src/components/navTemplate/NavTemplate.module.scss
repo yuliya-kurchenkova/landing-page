@@ -1,6 +1,8 @@
 @import "../../assets/scss/variables";
 
 .navTemplate {
+      display: flex;
+      justify-content: space-around;
 
       &__list {
       display: flex;

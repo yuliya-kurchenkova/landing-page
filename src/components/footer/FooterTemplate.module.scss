@@ -1,0 +1,32 @@
+@import "../../assets/scss/variables";
+
+.footerTemplate {
+  background: $background-footer;
+
+  &__hr {
+    margin: 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 68px 0 47px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 32px;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+  &__items {
+    padding-right: 34px;
+  }
+
+}
