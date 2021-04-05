@@ -9,8 +9,8 @@ export default class AsideTemplate extends Component {
             <div>
                <div className={classes.asideTemplate}>
                    <div className={classes['asideTemplate__box']}>
-                       <h2 className={classes['app-title asideTemplate__title']}>Light, Fast & Powerful</h2>
-                       <p className='app-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                       <h2 className={classes['asideTemplate__title']}>Light, Fast & Powerful</h2>
+                       <p className='app-text app-text_mb'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                        </p>
                    <div className={classes.asideTemplate_inner}>

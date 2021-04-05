@@ -13,7 +13,11 @@ function Cards({el}) {
             <div className={classes['cards__box']}>
                 <h2 className='app-title'>{el.title}</h2>
                 <p className='app-text'>{el.text}</p>
-                {/*<button className={'app-button app-button_primary'}>{el.button}</button>*/}
+                {
+                    el.button ?
+                        <button className={'app-button app-button_primary'}>{el.button}</button>
+                        : null
+                }
             </div>
         </div>
     )

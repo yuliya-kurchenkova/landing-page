@@ -9,7 +9,7 @@ import FooterTemplate from "./components/footer/FooterTemplate";
 
 function App() {
   return (
-      <div>
+      <div className={'app__wrapper'}>
         <MainContent />
         <AsideTemplate/>
         <ContainerTemplate />

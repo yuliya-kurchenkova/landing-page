@@ -2,6 +2,11 @@
 
 
 .app-button {
+
+  & + .app-button {
+    margin-left: 15px;
+  }
+
   height: 36px;
   width: 189px;
   padding: 0 20px;
@@ -26,4 +31,8 @@
     color: $primary;
     border: $borderRadius solid $primary;
   }
+}
+button + button {
+  margin-left: 15px;
+  background: red !important;
 }
