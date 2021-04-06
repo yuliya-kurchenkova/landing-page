@@ -13,54 +13,57 @@ export default class FooterTemplate extends Component {
     render () {
         return (
             <div className={classes.footerTemplate}>
-                <div className={classes['footerTemplate__header']}>
-                  <p>©2021 Yourcompany</p>
-                    <img
-                        src={logo}
-                        alt='Logo'
-                    />
-                    <Button
-                        buttonText={'Purchase now'}
-                        className={'app-button app-button_primary'}
-                    />
-                </div>
-                <hr className={classes['footerTemplate__hr']}/>
-                <div className={classes['footerTemplate__footer']}>
-                    <NavTemplate/>
-                    <div>
-                        <ul  className={classes['footerTemplate__list']}>
-                            <li className={classes['footerTemplate__items']}>
-                                <img
-                                src={icon}
-                                alt=''
-                            />
-                            </li>
-                            <li className={classes['footerTemplate__items']}>
-                                <img
+                <div className={'app__wrapper'}>
+                    <div className={classes['footerTemplate__header']}>
+                      <p className='app__text app__text_mb'>©2021 Yourcompany</p>
+                        <img
+                            src={logo}
+                            alt='Logo'
+                            className={'header__logo'}
+                        />
+                        <Button
+                            buttonText={'Purchase now'}
+                            className={'app__button app__button_primary'}
+                        />
+                    </div>
+                    <hr className={classes['footerTemplate__hr']}/>
+                    <div className={classes['footerTemplate__footer']}>
+                        <NavTemplate/>
+                        <div>
+                            <ul  className={classes['footerTemplate__list']}>
+                                <li className={classes['items']}>
+                                    <img
+                                    src={icon}
+                                    alt=''
+                                />
+                                </li>
+                                <li className={classes['items']}>
+                                    <img
 
-                                src={twitter}
-                                alt=''
-                            />
-                            </li>
-                            <li className={classes['footerTemplate__items']}>
-                                <img
-                                src={facebook}
-                                alt=''
-                            />
-                            </li>
-                            <li className={classes['footerTemplate__items']}>
-                                <img
-                                src={youtube}
-                                alt=''
-                            />
-                            </li>
-                            <li className={classes['footerTemplate__items']}>
-                                <img
-                                src={inst}
-                                alt=''
-                            />
-                            </li>
-                        </ul>
+                                    src={twitter}
+                                    alt=''
+                                />
+                                </li>
+                                <li className={classes['items']}>
+                                    <img
+                                    src={facebook}
+                                    alt=''
+                                />
+                                </li>
+                                <li className={classes['items']}>
+                                    <img
+                                    src={youtube}
+                                    alt=''
+                                />
+                                </li>
+                                <li className={classes['items']}>
+                                    <img
+                                    src={inst}
+                                    alt=''
+                                />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

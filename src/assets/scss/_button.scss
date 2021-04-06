@@ -1,9 +1,9 @@
 @import '../../assets/scss/variables' ;
 
 
-.app-button {
+.app__button {
 
-  & + .app-button {
+  & + .app__button {
     margin-left: 15px;
   }
 
@@ -16,6 +16,20 @@
   font: $font-size-base $font-global;
   cursor: pointer;
   transition: opacity .15s ease-in;
+
+  &_ml {
+    margin-left: 15px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_center {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
 
   &:hover {
     opacity: .8;
@@ -31,8 +45,4 @@
     color: $primary;
     border: $borderRadius solid $primary;
   }
-}
-button + button {
-  margin-left: 15px;
-  background: red !important;
 }

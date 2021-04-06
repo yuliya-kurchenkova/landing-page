@@ -5,8 +5,17 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
+  @media screen and (max-width: 599px) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   &__img {
     padding: 123px 0 163px;
+
+    @media screen and (max-width: 599px) {
+      padding: 20px 0 10px;
+    }
   }
 
   &__box {
@@ -14,5 +23,8 @@
     width: 445px;
     padding-top: 172px;
 
+    @media screen and (max-width: 599px) {
+      padding-top: 20px;
+    }
   }
 }

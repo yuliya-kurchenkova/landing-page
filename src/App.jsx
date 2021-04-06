@@ -8,15 +8,19 @@ import FooterTemplate from "./components/footer/FooterTemplate";
 
 
 function App() {
-  return (
-      <div className={'app__wrapper'}>
-        <MainContent />
-        <AsideTemplate/>
-        <ContainerTemplate />
-        <PriceTemplate />
-        <FooterTemplate/>
-      </div>
-  )
-};
+    return (
+        <>
+            <div className={'app__wrapper'}>
+                <div className={'app__background'}>
+                    <MainContent />
+                </div>
+                <AsideTemplate/>
+                <ContainerTemplate />
+            </div>
+            <PriceTemplate />
+            <FooterTemplate/>
+        </>
+    )
+}
 
 export default App;

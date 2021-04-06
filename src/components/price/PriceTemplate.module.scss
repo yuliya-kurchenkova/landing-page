@@ -1,12 +1,17 @@
 @import "../../assets/scss/variables";
 
 .priceTemplate {
+  display: flex;
   background: lightgray;
+  padding: 200px 0 200px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 0 30px;
+  }
 
   &__box{
-  width: 600px;
   text-align: center;
-  margin: 0 400px;
+
   }
 
   &__price {

@@ -1,24 +1,30 @@
 @import "../../assets/scss/variables";
 
 .navTemplate {
-      display: flex;
-      justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 
-      &__list {
-      display: flex;
-      list-style-type: none;
-      padding: 14px 16px;
-       }
+  @media screen and (max-width: 599px) {
+    margin-bottom: 30px;
+  }
 
-       &__item {
-         color: $color-header-link;
-         margin: 0 10px;
-       }
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
 
-        &__link {
-           color: $color-header-link;
-           text-align: center;
-           text-decoration: none;
-           font-size: $font-size-link;
-         }
-     }
+  &__item {
+    color: $color-header-link;
+
+    & + .navTemplate__item {
+      margin-left: 15px;
+    }
+  }
+
+  &__link {
+    color: $color-header-link;
+    text-align: center;
+    text-decoration: none;
+    font-size: $font-size-link;
+  }
+}

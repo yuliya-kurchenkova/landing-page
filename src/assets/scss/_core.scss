@@ -6,6 +6,11 @@ body {
   color: $color-text;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
 
 
@@ -13,41 +18,70 @@ body {
     font-size: $font-size-logo;
     font-weight: 900;
     color: $color-logo;
+
+    @media screen and (max-width: 599px) {
+      margin-bottom: 30px;
+    }
   }
 
 }
 .app {
 
-  &__wrapper {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  &-title {
-    font-size: $font-size-title;
-    color: $color-title;
-    font-weight: 500;
-    &_mb {
-      margin-bottom: 15px;
+  &__background {
+    background-image: url("../../assets/images/background-main.png");
+    width: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+
+    @media screen and (max-width: 767px) {
+      background-image: unset;
+      padding-bottom: 0;
     }
   }
 
-  &-text {
+  &__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-title;
+    color: $color-title;
+    font-weight: 500;
+
+    &_mb {
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 599px) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__text {
     color: $color-text;
     font-size: $font-size-base;
+
     &_mb {
       margin-bottom: 25px;
 
     }
   }
 
-  &-subtitle {
+  &__subtitle {
     padding: 23px 0 6px;
     font-size:$font-size-base;
     color: $color-title;
     font-weight: 500;
   }
 
-  &-small-text {
+  &__small-text {
     padding-bottom: 162px;
     font-size:$font-size-button;
     color: $color-subtitle-text;

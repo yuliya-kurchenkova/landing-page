@@ -11,11 +11,11 @@ function Cards({el}) {
                 className={classes['cards__img']}
             />
             <div className={classes['cards__box']}>
-                <h2 className='app-title'>{el.title}</h2>
-                <p className='app-text'>{el.text}</p>
+                <h2 className='app__title app__title_mb'>{el.title}</h2>
+                <p className='app__text app__text_mb'>{el.text}</p>
                 {
                     el.button ?
-                        <button className={'app-button app-button_primary'}>{el.button}</button>
+                        <button className={'app__button app__button_primary app__button_center'}>{el.button}</button>
                         : null
                 }
             </div>
