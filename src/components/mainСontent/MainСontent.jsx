@@ -5,11 +5,12 @@ import Button from "../button/Button";
 
 
 
+
 export default class MainContent extends Component {
     render() {
         return (
-            <div className={classes.mainContent}>
-                <div className={'app__background'}>
+            <div className={classes.mainContent} id="home">
+                <div id="logo">
                     <Header/>
                     <div className={classes['mainContent__box']}>
                         <h1 className={classes['mainContent__title']}>Introduce Your Product Quickly & Effectively</h1>

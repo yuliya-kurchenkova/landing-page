@@ -10,12 +10,12 @@ import FooterTemplate from "./components/footer/FooterTemplate";
 function App() {
     return (
         <>
-            <div className={'app__wrapper'}>
-                <div className={'app__background'}>
+            <div className={'app__background'}>
+                <div className={'app__wrapper'}>
                     <MainContent />
+                    <AsideTemplate/>
+                    <ContainerTemplate />
                 </div>
-                <AsideTemplate/>
-                <ContainerTemplate />
             </div>
             <PriceTemplate />
             <FooterTemplate/>

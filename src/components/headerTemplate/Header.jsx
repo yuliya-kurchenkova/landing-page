@@ -9,11 +9,13 @@ export default class Header extends Component {
         return (
             <div className={classes.header}>
                 <NavTemplate/>
+                <a href="logo">
                 <img
                     className={'header__logo'}
                     src={logo}
                     alt='Logo'
                 />
+                </a>
                 <Button
                     buttonText={'Buy Now'}
                     className={'app__button app__button_primary'}

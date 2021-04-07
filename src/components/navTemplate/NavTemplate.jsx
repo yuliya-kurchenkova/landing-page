@@ -16,7 +16,7 @@ class NavTemplate extends Component {
                                     className={classes['navTemplate__item']}
                                 >
                                     <a
-                                        href={link.route}
+                                        href={`#${link.route}`}
                                         className={classes['navTemplate__link']}
                                     >
                                         {link.text}

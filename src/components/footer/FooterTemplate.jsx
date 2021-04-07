@@ -12,15 +12,17 @@ import classes from './FooterTemplate.module.scss'
 export default class FooterTemplate extends Component {
     render () {
         return (
-            <div className={classes.footerTemplate}>
+            <div className={classes.footerTemplate} id="contact">
                 <div className={'app__wrapper'}>
                     <div className={classes['footerTemplate__header']}>
                       <p className='app__text app__text_mb'>©2021 Yourcompany</p>
-                        <img
-                            src={logo}
-                            alt='Logo'
-                            className={'header__logo'}
-                        />
+                        <a href="logo">
+                            <img
+                                src={logo}
+                                alt='Logo'
+                                className={'header__logo'}
+                            />
+                        </a>
                         <Button
                             buttonText={'Purchase now'}
                             className={'app__button app__button_primary'}
